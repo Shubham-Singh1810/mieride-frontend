@@ -58,7 +58,7 @@ function page() {
               })}
             </div>
             <div className="bar d-md-none d-block">
-              <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"/>
+              <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" />
             </div>
           </div>
         </div>
@@ -106,31 +106,32 @@ function page() {
           <div className="row">
             <div className="col-12 col-md-6 order-md-1 order-2">
               <div className="contactForm">
-                 <div>
-                  <input placeholder="Your Name"/>
-                 </div>
-                 <div>
-                  <input placeholder="Your Email"/>
-                 </div>
-                 <div>
-                  <input placeholder="Message"/>
-                 </div>
-                  <div className="d-flex justify-content-center">
-                    <button>Send</button>
-                  </div>
+                <div>
+                  <input placeholder="Your Name" />
+                </div>
+                <div>
+                  <input placeholder="Your Email" />
+                </div>
+                <div>
+                  <input placeholder="Message" />
+                </div>
+                <div className="d-flex justify-content-center">
+                  <button>Send</button>
+                </div>
               </div>
-              
-              
             </div>
             <div className="col-12 col-md-6 order-md-2 order-1 m-auto d-flex justify-content-center ">
               <div className="contactMessageDiv">
                 <h5>Have any Query</h5>
                 <h3>CONTACT US</h3>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Deserunt, cumque!  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Deserunt, cumque!</p>
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Deserunt, cumque! Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Deserunt, cumque!
+                </p>
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
