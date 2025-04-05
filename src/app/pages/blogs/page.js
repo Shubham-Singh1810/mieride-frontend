@@ -5,6 +5,7 @@ import {
   getBlogListServ,
 } from "../../services/blog.services";
 import {Image_Base_Url} from "../../utils/api_base_url_configration"
+import Navbar from "../../components/Navbar";
 function page() {
   const navItems = [
     {
@@ -70,31 +71,13 @@ function page() {
     <div className="mainDiv">
       <div className="homepage">
         {/* navbar started */}
-        <div className="navMain">
-          <div className="d-flex align-items-center justify-content-between">
-            <div className="brandLogo">
-              <img src="/assets/logo.png" alt="Logo" className="logo" />
-            </div>
-            <div className="navContant d-md-flex justify-content-between w-100 d-none">
-              {navItems?.map((v, i) => {
-                return (
-                  <div className="navItem">
-                    <p className="mb-0">{v?.name}</p>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="bar d-md-none d-block">
-              <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" />
-            </div>
-          </div>
-        </div>
+       <Navbar selectedItem="Blogs" navItems={navItems}/>
         {/* navbar ended */}
         <div className="blogsMain">
           <div className="row">
             <div className="col-12 order-md-1 order-2 col-md-6 my-auto">
-              <h3 className="d-none d-md-block">Latest Insight</h3>
-              {/* <p dangerouslySetInnerHTML={{ __html: v?.blogList[0]?.short_description }} /> */}
+              <h3 className="d-none d-md-block">{blogList[0]?.title}</h3>
+              <p dangerouslySetInnerHTML={{ __html: blogList[0]?.short_description }} />
               <span>Feb 25, 2025</span>
               <div>
                 <button>Read More</button>
@@ -123,15 +106,12 @@ function page() {
                   <div className="blogCart shadow">
                     <img src={Image_Base_Url+v?.image} />
                     <div className="p-md-3 p-1">
-                      <p>
-                        {v?.short_description}
-                      </p>
+                    <p dangerouslySetInnerHTML={{ __html: v?.short_description }} />
+                    
                       <div className="my-md-2 my-0">
                         <span>Feb 25, 2025</span>
                       </div>
-                      <span className="d-md-block d-none">
-                        {v?.short_description}
-                      </span>
+                      
                     </div>
                   </div>
                 </div>
