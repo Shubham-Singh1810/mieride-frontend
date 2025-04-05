@@ -44,11 +44,11 @@ function page() {
       <div className="homepage">
         {/* navbar started */}
         <div className="navMain">
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center justify-content-between">
             <div className="brandLogo">
               <img src="/assets/logo.png" alt="Logo" className="logo" />
             </div>
-            <div className="navContant d-flex justify-content-between w-100">
+            <div className="navContant d-md-flex justify-content-between w-100 d-none">
               {navItems?.map((v, i) => {
                 return (
                   <div className="navItem">
@@ -56,6 +56,9 @@ function page() {
                   </div>
                 );
               })}
+            </div>
+            <div className="bar d-md-none d-block">
+              <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"/>
             </div>
           </div>
         </div>
@@ -66,7 +69,7 @@ function page() {
             <img src="/assets/MieRide.png" alt="" className="mie-ride" />
           </div>
           <div className=" homeContent row d-flex justify-content-between">
-            <div className="col-5">
+            <div className="col-md-5 col-12 order-md-1 order-2">
               <p>
                 Welcome to Mie Ride, your friendly neighborhood ride solution
                 without the surge price surprises. We get it - life's expensive
@@ -82,10 +85,10 @@ function page() {
               </p>
               <button>Register</button>
             </div>
-            <div className="herosectionImage col-6 d-flex justify-content-between ">
+            <div className="herosectionImage col-md-6 col-12 order-md-2 order-1 d-flex justify-content-between ">
               <img src="/assets/mobile3.png" alt="" className="img-fluid" />
             </div>
-            <div className="col-1 mt-auto d-flex justify-content-end">
+            <div className="col-md-1 mt-auto d-md-flex justify-content-end d-none order-3">
               <div className="socialMediaDiv">
                 <img
                   src="/assets/instagram2.png"
@@ -106,8 +109,8 @@ function page() {
             </div>
           </div>
           <div className="row">
-            <div className="col-10 row">
-              <div className="col-4 ">
+            <div className="col-md-10 col-12 m-md-0 mx-0 mt-3 p-0 row">
+              <div className="col-md-4 col-12">
                 <div className="homeCardBox">
                   <h2>Shared Ride</h2>
                   <p>
@@ -117,7 +120,7 @@ function page() {
                   <button>Read More</button>
                 </div>
               </div>
-              <div className="col-4 ">
+              <div className="col-md-4 col-12">
                 <div className="homeCardBox">
                   <h2>Personal Ride</h2>
                   <p>
@@ -127,7 +130,7 @@ function page() {
                   <button>Read More</button>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 col-12">
                 <div className="homeCardBox">
                   <h2>Driver Onboard</h2>
                   <p>
@@ -138,8 +141,8 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="col-2 my-auto d-flex justify-content-end">
-              <div>
+            <div className="col-12 col-md-2 my-auto d-md-flex justify-content-end">
+              <div className="d-flex  d-md-block justify-content-center">
                 <div className="miePaybutton d-flex justify-content-center align-items-center">
                   <div className="">
                     <div>MIE</div>
@@ -149,6 +152,25 @@ function page() {
                 <div className="robot d-flex justify-content-center align-items-center">
                   <img src="/assets/robot.png" alt="" />
                 </div>
+              </div>
+            </div>
+            <div className=" d-flex d-md-none ">
+              <div className="socialMediaDiv ">
+                <img
+                  src="/assets/instagram2.png"
+                  alt="Logo"
+                  className="s-img"
+                />
+
+                <img src="/assets/tik-tok2.png" alt="Logo" className="s-img" />
+
+                <img src="/assets/youtube2.png" alt="Logo" className="s-img" />
+
+                <img src="/assets/twitter2.png" alt="Logo" className="s-img" />
+
+                <img src="/assets/facebook2.png" alt="Logo" className="s-img" />
+
+                <img src="/assets/linkedin2.png" alt="Logo" className="s-img" />
               </div>
             </div>
           </div>

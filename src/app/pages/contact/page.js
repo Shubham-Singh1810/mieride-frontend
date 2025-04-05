@@ -44,11 +44,11 @@ function page() {
       <div className="homepage">
         {/* navbar started */}
         <div className="navMain">
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center justify-content-between">
             <div className="brandLogo">
               <img src="/assets/logo.png" alt="Logo" className="logo" />
             </div>
-            <div className="navContant d-flex justify-content-between w-100">
+            <div className="navContant d-md-flex justify-content-between w-100 d-none">
               {navItems?.map((v, i) => {
                 return (
                   <div className="navItem">
@@ -57,16 +57,19 @@ function page() {
                 );
               })}
             </div>
+            <div className="bar d-md-none d-block">
+              <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"/>
+            </div>
           </div>
         </div>
         {/* navbar ended */}
         <div className="contactMain">
           <div className="row contactHeaderRow">
-            <div className="col-3">
+            <div className="col-md-3 col-12">
               <h5>Contact Us</h5>
               <h3>GET IN TOUCH</h3>
             </div>
-            <div className="col-3 my-auto">
+            <div className="col-md-3 col-6 my-auto">
               <div className="contactBox shadow">
                 <div>
                   <div className="d-flex justify-content-center">
@@ -77,7 +80,7 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="col-3 my-auto">
+            <div className="col-md-3 col-6 my-auto">
               <div className="contactBox shadow">
                 <div>
                   <div className="d-flex justify-content-center">
@@ -88,7 +91,7 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="col-3 my-auto">
+            <div className="col-md-3 col-6 my-auto mx-auto">
               <div className="contactBox shadow">
                 <div>
                   <div className="d-flex justify-content-center">
@@ -101,7 +104,7 @@ function page() {
             </div>
           </div>
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6 order-md-1 order-2">
               <div className="contactForm">
                  <div>
                   <input placeholder="Your Name"/>
@@ -119,7 +122,7 @@ function page() {
               
               
             </div>
-            <div className="col-6 m-auto d-flex justify-content-center">
+            <div className="col-12 col-md-6 order-md-2 order-1 m-auto d-flex justify-content-center ">
               <div className="contactMessageDiv">
                 <h5>Have any Query</h5>
                 <h3>CONTACT US</h3>

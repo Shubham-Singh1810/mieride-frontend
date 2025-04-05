@@ -328,3 +328,212 @@
 .robot img {
   height: 50px;
 }
+
+
+/* responsives design */
+.bar img{
+  height: 25px;
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 375px) {
+  .homepage {
+    padding: 10px 15px !important;
+  }
+}
+@media (max-width: 500px) {
+  .homepage {
+    padding: 20px 30px;
+  }
+  .homeMain {
+    margin-top: 30px;
+  }
+  .homeMain h3 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .mierideLogo img {
+    height: 30px;
+    margin: 15px 0px;
+  }
+  .homeContent p{
+    padding: 0px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: justify;
+  }
+  .homeContent button {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    filter: drop-shadow(-6.947px 7.193px 4px rgba(0, 0, 0, 0.86));
+    background-color: #ceff13;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    border: none;
+    font-family: "Montserrat";
+  }
+  .homeCardBox h2 {
+    font-size: 20px;
+  }
+  .homeCardBox p {
+    font-size: 12px;
+    margin: 5px 0px;
+  }
+  .homeCardBox{
+    margin: 20px 0px;
+  }
+  .miePaybutton {
+    
+    border-radius: 15px;
+    height: 60px;
+    width:60px;
+    font-size: 12px;
+    
+  }
+  .robot {
+    margin-top: 0px;
+    background-color: #333437;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  .robot img {
+    height: 35px;
+  }
+  .socialMediaDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    width: 100%;
+    padding: 15px 20px 0px 20px;
+    margin-top: 20px;
+  }
+  .blogsMain {
+    margin-top: 30px;
+  }
+  .blogsMain h3 {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  .blogsMain p {
+    font-size: 15px;
+    margin: 8px 0px;
+  }
+  .blogsMain span {
+    font-size: 12px;
+    letter-spacing: 0px;
+    
+  }
+  .blogsMain button {
+    margin-top: 8px;
+    width: 100px;
+    border-radius: 24px;
+    font-size: 15px;
+    height: 35px;
+  }
+  .aboutHeroImg img{
+    border-radius: 6px;
+  }
+  .categoryItem {
+    border-radius: 16px;
+    
+    margin-right: 15px;
+  }
+  .categoryItem p {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0px;
+  }
+  .blogCart {
+    border: 1px solid gray;
+    margin-bottom: 12px;
+  }
+  .blogCart img {
+    width: 100%;
+    height: 100px;
+  }
+  .blogCart p {
+    font-size: 8px;
+    margin: 0px !important;
+  }
+  .blogCart span {
+    font-size: 8px;
+    line-height: 0px !important;
+  }
+  .contactHeaderRow {
+    margin: 20px 0px !important;
+  }
+  .contactHeaderRow h5 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .contactHeaderRow h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .contactBox {
+    padding: 6px 8px;
+    border-radius: 12px;
+    margin-bottom: 20px !important;
+  }
+  .contactBox img {
+    height: 15px;
+    filter: brightness(0) invert(1);
+  }
+  .contactBox p {
+    
+    font-size: 10px;
+    margin: 5px 0px;
+    font-weight: 300;
+  }
+  .contactBox h4 {
+    margin-top: 5px;
+    font-size: 10px !important;
+  }
+  .contactMessageDiv {
+    width: 100%;
+  }
+  .contactMessageDiv h5 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .contactMessageDiv h3 {
+    color: #fff;
+    margin: 10px 0px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .contactMessageDiv p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .contactForm {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0px 10px;
+  }
+  .contactForm input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  .contactForm button {
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 700;
+    height: 35px;
+  }
+}
