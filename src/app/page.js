@@ -154,14 +154,12 @@ function page() {
             </div>
             <div className="col-12 col-md-2 my-auto d-md-flex justify-content-end">
               <div className="d-flex  d-md-block justify-content-center">
-                <div className=" miePayLogo d-flex justify-content-center align-items-center">
+                <div className=" miePayLogo d-flex justify-content-end align-items-end">
                   <a href="https://miepay.ca/" target="blank">
                   <img src="/assets/miepayLogo.jpeg" className="img-fluid"/>
                   </a>
                 </div>
-                <div className="robot d-flex justify-content-center align-items-center">
-                  <img src="/assets/robot.png" alt="" />
-                </div>
+               
               </div>
             </div>
             <div className=" d-flex d-md-none ">
