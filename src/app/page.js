@@ -52,7 +52,7 @@ function page() {
             <img src="/assets/MieRide.png" alt="" className="mie-ride" />
           </div>
           <div className=" homeContent row d-flex justify-content-between">
-            <div className="col-md-5 col-12 order-md-1 order-2">
+            <div className="col-md-4 col-12 order-md-1 order-2">
               <p>
                 Welcome to Mie Ride, your friendly neighborhood ride solution
                 without the surge price surprises. We get it - life's expensive
@@ -66,9 +66,9 @@ function page() {
                 robotes setting prices - just real solutions for real people.
                 Come ride with us and join our growing community today!
               </p>
-              <button>Register</button>
+              <button className="mt-4">Register</button>
             </div>
-            <div className="herosectionImage col-md-6 col-12 order-md-2 order-1 d-flex justify-content-between ">
+            <div className="herosectionImage col-md-7 col-12 order-md-2 order-1 d-flex justify-content-between ">
               <img src="/assets/mobile3.png" alt="" className="img-fluid" />
             </div>
             <div className="col-md-1 mt-auto d-md-flex justify-content-end d-none order-3">
@@ -119,10 +119,10 @@ function page() {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-10 col-12 m-md-0 mx-0 mt-3 p-0 row">
-              <div className="col-md-4 col-12">
-                <div className="homeCardBox ">
+          <div className="row mt-md-5 mt-0 pt-md-5 pt-0">
+            <div className="col-md-10 col-12 m-md-0 mx-0 mt-3 p-0 row ">
+              <div className="col-md-4 col-12 mb-4">
+                <div className="homeCardBox h-100">
                   <h2>Shared Ride</h2>
                   <p>
                     Travel together, split costs reduse emissions-smart
@@ -131,8 +131,8 @@ function page() {
                   <button>Read More</button>
                 </div>
               </div>
-              <div className="col-md-4 col-12 my-auto">
-                <div className="homeCardBox">
+              <div className="col-md-4 col-12  mb-4">
+                <div className="homeCardBox h-100">
                   <h2>Personal Ride</h2>
                   <p>
                     Book your own private journey with fixed pricing and
@@ -141,8 +141,8 @@ function page() {
                   <button>Read More</button>
                 </div>
               </div>
-              <div className="col-md-4 col-12 my-auto">
-                <div className="homeCardBox">
+              <div className="col-md-4 col-12  mb-4">
+                <div className="homeCardBox h-100">
                   <h2>Driver Onboard</h2>
                   <p>
                     Join our team, set your schedule, earn consistently while
