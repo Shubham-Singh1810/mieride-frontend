@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { submitContactQuery } from "../../services/contact.services";
 import { toast, ToastContainer } from "react-toastify";
+import Navbar from "@/app/components/Navbar";
 
 function Page() {
   const navItems = [
@@ -36,7 +37,6 @@ function Page() {
         await submitContactQuery(values);
         toast.success("Message sent successfully!");
         resetForm();
-       
       } catch (error) {
         console.log(error);
         toast.error("Something went wrong. Please try again.");
@@ -48,23 +48,7 @@ function Page() {
     <div className="mainDiv">
       <div className="homepage">
         {/* navbar started */}
-        <div className="navMain">
-          <div className="d-flex align-items-center justify-content-between">
-            <div className="brandLogo">
-              <img src="/assets/logo.png" alt="Logo" className="logo" />
-            </div>
-            <div className="navContant d-md-flex justify-content-between w-100 d-none">
-              {navItems?.map((v, i) => (
-                <div className="navItem" key={i}>
-                  <p className="mb-0">{v?.name}</p>
-                </div>
-              ))}
-            </div>
-            <div className="bar d-md-none d-block">
-              <img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" />
-            </div>
-          </div>
-        </div>
+        <Navbar selectedItem="Contact Us" navItems={navItems} />
         {/* navbar ended */}
         <div className="contactMain">
           <div className="row contactHeaderRow">
@@ -119,7 +103,9 @@ function Page() {
                     onBlur={formik.handleBlur}
                   />
                   {formik.touched.first_name && formik.errors.first_name && (
-                    <small className="text-danger">{formik.errors.first_name}</small>
+                    <small className="text-danger">
+                      {formik.errors.first_name}
+                    </small>
                   )}
                 </div>
                 <div>
@@ -143,7 +129,9 @@ function Page() {
                     onBlur={formik.handleBlur}
                   />
                   {formik.touched.subject && formik.errors.subject && (
-                    <small className="text-danger">{formik.errors.subject}</small>
+                    <small className="text-danger">
+                      {formik.errors.subject}
+                    </small>
                   )}
                 </div>
                 <div>
@@ -155,7 +143,9 @@ function Page() {
                     onBlur={formik.handleBlur}
                   />
                   {formik.touched.message && formik.errors.message && (
-                    <small className="text-danger">{formik.errors.message}</small>
+                    <small className="text-danger">
+                      {formik.errors.message}
+                    </small>
                   )}
                 </div>
                 <div className="d-flex justify-content-center">
@@ -177,7 +167,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 }
